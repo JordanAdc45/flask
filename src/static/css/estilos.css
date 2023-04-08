@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+body{
+    font-family: 'DynaPuff', cursive;
+    background-color: white;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.form-usuario{
+   width: 20%;
+   background: #82aeda;
+   padding: 10px;
+   margin: 20px;
+   margin-top: 10px; 
+}
+
+.form-usus{
+    width: 50%;
+    background: #82aeda;
+    padding: 10px;
+    margin: 40px;
+    position: relative;
+    left: 300px;
+    bottom: 380px;
+}
+
+input {
+    width: 180px;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #191964;
+}
+
+.formula{
+    box-sizing: border-box;
+    width: 100px;
+    border: 0;
+    border-bottom: 2px solid #191964;
+}
+
+h1{
+    text-align: center;
+    background-color:#a50909;
+    color: white;
+    padding: 20px;
+}
+
+h2{
+    background-color: #a78080;
+    color: white;
+    padding: 10px;
+}
+button{
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #121218;
+    background:#a50909;
+    color:#121218;
+    cursor:pointer;
+    transition:all .3s}
+
+a{
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #121218;
+    background:#a50909;
+    color:#ee0e0e;
+    cursor:pointer;
+    transition:all .3s}    
+
+
