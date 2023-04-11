@@ -1,8 +1,9 @@
-from flask import Flask ,render_template,redirect,url_for,request
+from flask import Flask ,render_template,redirect,url_for,request,flash
 from config import *
 
 con_bd = EstablecerConexion()
 app = Flask(__name__)
+app.secret_key = 'america'
 
 
 @app.route('/')
@@ -25,7 +26,7 @@ def AgregarPersonas():
         sql = "INSERT INTO personas (nombre,apellido,telefono) VALUES (%s,%s,%s)"
         cursor.execute(sql,(nombre,apellido,telefono))
         con_bd.commit()
-        
+        flash("Registro guardado correctamente","info") 
         return redirect(url_for('index'))
     else:
      return "Error en la consulta"
@@ -36,7 +37,7 @@ def eliminar(id_persona):
     sql = "DELETE FROM personas WHERE id = {0}".format(id_persona)
     cursor.execute(sql)
     con_bd.commit()
-    Flask("Registro eliminar correctamente")
+    flash("Registro eliminado correctamente","info")
     return redirect((url_for('index')))
 
 
@@ -53,9 +54,10 @@ def ActualizarPersona(id_persona):
              WHERE id=%s;
         """
         cursor.execute(sql,(nombre,apellido,telefono,id_persona))
+        flash("Personas Editado Correctamente","info")
         con_bd.commit()
-        #Grabar un mensaje al final de una solicitud y desplegar una ves se recarga la pagina
-        Flask("Registro editado correctamente")
+        
+        
         return redirect((url_for('index')))
     else:
         return "Error en la consulta"

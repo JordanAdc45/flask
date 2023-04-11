@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
 body{
     font-family: 'DynaPuff', cursive;
-    background-color: white;
+    background-color: black;
 }
 
 *{
@@ -54,14 +54,14 @@ h2{
     padding: 10px;
 }
 button{
-    padding:8px 12px;
+    padding:13px 35px;
     margin:8px 0 0;
     font-family:'Montserrat',sans-serif;
     border:2px solid #121218;
-    background:#a50909;
+    
     color:#121218;
     cursor:pointer;
-    transition:all .3s}
+    }
 
 a{
     padding:8px 12px;

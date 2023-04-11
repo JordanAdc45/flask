@@ -5,7 +5,7 @@ HOST ='containers-us-west-107.railway.app'
 PORT= 7347
 BD = 'railway'
 USUARIO ='postgres'
-PASS = '0arqOaW3j4fMfFTFlnNj'
+PASS = 'NvGn0nmFSQzDTq0rP6ZY'
 
 def EstablecerConexion():
     try:
